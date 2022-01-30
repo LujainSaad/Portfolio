@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/1c9ad4b785.js"
+      crossorigin="anonymous"
+    ></script>
+        <!-- style sheets -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <!-- google fonts   -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=STIX+Two+Text&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="img/water.mp4" type="video/mp4" />
+          <!-- <source src="img/video.webm" type="video/webm"> -->
+        </video>
+      </div>
+
+      <div class="container">
+        <div class="heading-container">
+          <h1 class="heading">
+            Hi,
+            <span class="small-heading">I'm Lujain</span>
+          </h1>
+        </div>
+
+        <div class="buttons">
+          <button class="button-retro quaternary" href="#about-me">
+            About me
+          </button>
+          <button class="button-retro secondary" href="#">Skills</button>
+          <button class="button-retro tertiary" href="#">Projects</button>
+          <button class="button-retro primary" href="#">Recommendations</button>
+          <button class="button-retro quinary" href="#">Contacts</button>
+        </div>
+      </div>
+    </header>
+    <!-- section 1   -->
+    <section class="about-me section" id="about-me">
+      <div class="section__title">
+        <h2 class="section__description">About me:</h2>
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
+      <!-- <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="img/Matrix, Console, Hacking, Code.mp4" type="video/mp4" />
+          <source src="img/video.webm" type="video/webm"> 
+        </video>
+      </div> -->
+      <div class="info">
+        <div class="info__tab-container">
+          <button
+            class="btn info__tab info__tab--1 info__tab--active"
+            data-tab="1"
+          >
+            Who
+          </button>
+          <button class="btn info__tab info__tab--2" data-tab="2">
+            Education
+          </button>
+          <button class="btn info__tab info__tab--3" data-tab="3">
+            Languages
+          </button>
+          <button class="btn info__tab info__tab--5" data-tab="5">
+            Experience
+          </button>
+          <button class="btn info__tab info__tab--4" data-tab="4">
+            Awards
+          </button>
+        </div>
+        <!-- 1 -->
+        <div class="info__content-container">
+          <div class="info__content info__content--1 info__content--active">
+            <div class="info__icon info__icon--1"><i class="fas fa-book-open"></i></div>
+            <h5 class="info__header">Who am I?</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="info__content info__content--2">
+            <div class="info__icon info__icon--2"><i class="fas fa-university"></i></div>
+            <h5 class="info__header">Education</h5>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+          </div>
+          <!-- 3 -->
+          <div class="info__content info__content--3">
+            <div class="info__icon info__icon--3"><i class="fas fa-language"></i></div>
+            <h5 class="info__header">Languages</h5>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+          </div>
+          <!-- 4 -->
+          <div class="info__content info__content--4">
+            <div class="info__icon info__icon--4"><i class="fas fa-award"></i></div>
+            <h5 class="info__header">Awards</h5>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+          </div>
+           <!-- 5 -->
+           <div class="info__content info__content--5">
+            <div class="info__icon info__icon--5"><i class="fas fa-briefcase"></i></div>
+            <h5 class="info__header">Experience</h5>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 2   -->
+    <section class="section skills">
+      <div class="section__title">
+        <h2 class="section__description">Skills:</h2>
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
+      <div class="skills-container">
+        <div class="skill">
+          <i class="skill-icon far fa-keyboard"></i>
+          <span class="text">C++</span>
+        </div>
+        <div class="skill">
+          <i class="skill-icon fab fa-java"></i>
+          <span class="text">Java</span>
+        </div>
+        <div class="skill">
+          <i class="skill-icon fab fa-python"></i>
+          <span class="text">Python</span>
+        </div>
+        <div class="skill">
+          <i class="skill-icon fas fa-desktop"></i>
+          <span class="text">MatLab</span>
+        </div>
+        <div class="skill">
+          <i class="skill-icon far fa-window-restore"></i>
+          <span class="text">Web Development</span>
+        </div>
+        <div class="skill">
+          <i class="skill-icon fab fa-html5"></i>
+          <span class="text">HTML</span>
+        </div>
+        <div class="skill">
+          <i class="skill-icon fab fa-css3-alt"></i>
+          <span class="text">CSS</span>
+        </div>
+        <div class="skill">
+          <i class="skill-icon fab fa-sass"></i>
+          <span class="text">Sass</span>
+        </div>
+        <div class="skill">
+          <i class="skill-icon fab fa-js-square"></i>
+          <span class="text">Javascript</span>
+        </div>
+        <div class="skill">
+          <i class="skill-icon fas fa-mobile-alt"></i>
+          <span class="text">App Development</span>
+        </div>
+        <div class="skill">
+          <i class="skill-icon fab fa-app-store-ios"></i>
+          <span class="text">Flutter</span>
+        </div>
+        <div class="skill">
+          <i class="skill-icon fas fa-mobile"></i>
+          <span class="text">Dart</span>
+        </div>
+       
+      </div>
+    </section>
+    <!-- section 3   -->
+    <section class="section projects">
+      <div class="section__title">
+        <h2 class="section__description">Projects:</h2>
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
+      <div class="cards-container">
+        <!-- card 1 -->
+        <div class="card">
+          <div class="card__side card__side--front">
+               <div class="card__picture card__picture--1">
+                   &nbsp;
+               </div>
+               <h4 class="card__heading">
+                   <span class="card__heading-span card__heading-span--1">Mini Bank</span>
+               </h4>
+               <div class="card__details">
+
+               </div>
+          </div>
+          <div class="card__side card__side--back card__side--back-1">
+               <button href="https://github.com/LujainSaad" target="_blank" class=" btn--white">Open</button>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card">
+          <div class="card__side card__side--front">
+               <div class="card__picture card__picture--2">
+                   &nbsp;
+               </div>
+               <h4 class="card__heading">
+                   <span class="card__heading-span card__heading-span--2">Hotel landing page</span>
+               </h4>
+               <div class="card__details">
+
+               </div>
+          </div>
+          <div class="card__side card__side--back card__side--back-2">
+               <button href="https://github.com/LujainSaad/Natours-Exciting-tours-for-adventurous-people" target="_blank" class=" btn--white">Open</button>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card">
+          <div class="card__side card__side--front">
+               <div class="card__picture card__picture--3">
+                   &nbsp;
+               </div>
+               <h4 class="card__heading">
+                   <span class="card__heading-span card__heading-span--3">Multi-Theme Calculator</span>
+               </h4>
+               <div class="card__details">
+
+               </div>
+          </div>
+          <div class="card__side card__side--back card__side--back-3">
+               <button href="https://github.com/LujainSaad/calculator-app-main" target="_blank" class=" btn--white">Open</button>
+          </div>
+        </div>
+           <!-- card 2 -->
+           <div class="card">
+            <div class="card__side card__side--front">
+                 <div class="card__picture card__picture--4">
+                     &nbsp;
+                 </div>
+                 <h4 class="card__heading">
+                     <span class="card__heading-span card__heading-span--4">Personal Expenses App</span>
+                 </h4>
+                 <div class="card__details">
+  
+                 </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-4">
+                 <button href="https://github.com/LujainSaad/personal_expenses_app" target="_blank" class=" btn--white">Open</button>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- section 2   -->
+    <section class="section recommendations">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Recommendations:</h2>
+        <h3 class="section__header">
+          Nice things people said about me.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="recommendation">
+            <blockquote class="recommendation__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium quas quisquam non? Quas voluptate nulla minima
+              deleniti optio ullam nesciunt, numquam corporis et asperiores
+              laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+              id alias reiciendis, perferendis facere pariatur dolore veniam
+              autem esse non voluptatem saepe provident nihil molestiae.
+            </blockquote>
+            <address class="recommendation__author">
+              <h6 class="recommendation__name">Aarav Lynn</h6>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="recommendation">
+            <blockquote class="recommendation__text">
+              Quisquam itaque deserunt ullam, quia ea repellendus provident,
+              ducimus neque ipsam modi voluptatibus doloremque, corrupti
+              laborum. Incidunt numquam perferendis veritatis neque repellendus.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+              deserunt exercitationem deleniti.
+            </blockquote>
+            <address class="recommendation__author">
+              <h6 class="recommendation__name">Miyah Miles</h6>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="recommendation">
+            <blockquote class="recommendation__text">
+              Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+              incidunt commodi architecto numquam omnis nulla autem,
+              necessitatibus blanditiis modi similique quidem. Odio aliquam
+              culpa dicta beatae quod maiores ipsa minus consequatur error sunt,
+              deleniti saepe aliquid quos inventore sequi. Necessitatibus id
+              alias reiciendis, perferendis facere.
+            </blockquote>
+            <address class="recommendation__author">
+              <h6 class="recommendation__name">Francisco Gomes</h6>
+            </address>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+     <!-- Footer -->
+
+  <footer id="footer">
+    <div class="footer-container">
+      <a href="https://twitter.com/iuiuxz" target="_blank" ><i class="footer-icon fab fa-twitter"></i></a>
+      <a href="https://github.com/LujainSaad" target="_blank" ><i class="footer-icon fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/lujain-saad-4751b2186/" target="_blank"><i class="footer-icon fab fa-linkedin"></i></a>
+      <a href = "mailto: LujainSaadCS@gmail.com" target="_blank"><i class="footer-icon fas fa-envelope"></i></a>
+      <p>© Copyright 2022 Lujain Saad</p>
+    </div>    
+
+  </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
