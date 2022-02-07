@@ -38,22 +38,27 @@
         </div>
 
         <div class="buttons">
-          <button class="button-retro quaternary" href="#about-me">
-            About me
+          <button class="button-retro quaternary" href="#">
+            <a class="button__link" href="#section--1">About me</a>
           </button>
-          <button class="button-retro secondary" href="#">Skills</button>
-          <button class="button-retro tertiary" href="#">Projects</button>
-          <button class="button-retro primary" href="#">Recommendations</button>
-          <button class="button-retro quinary" href="#">Contacts</button>
+          <button class="button-retro secondary" href="#">
+            <a class="button__link" href="#section--2">Skills</a>
+            </button>
+          <button class="button-retro tertiary" href="#">            
+            <a class="button__link" href="#section--3">Projects</a>
+            </button>
+          <!-- <button class="button-retro primary" href="#">Recommendations</button> -->
+          <button class="button-retro quinary" href="#">            
+            <a class="button__link" href="#footer"> Contacts</a>
+            </button>
         </div>
       </div>
     </header>
     <!-- section 1   -->
-    <section class="about-me section" id="about-me">
+    <section class="about-me section" id="section--1">
       <div class="section__title">
         <h2 class="section__description">About me:</h2>
         <h3 class="section__header">
-          Everything as simple as possible, but no simpler.
         </h3>
       </div>
       <!-- <div class="bg-video">
@@ -87,68 +92,94 @@
         <div class="info__content-container">
           <div class="info__content info__content--1 info__content--active">
             <div class="info__icon info__icon--1"><i class="fas fa-book-open"></i></div>
-            <h5 class="info__header">Who am I?</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <!-- <h4 class="info__header">about</h4> -->
+            <div class="info__details about">
+              <h5><span>&nbsp;Name: &nbsp;</span> Lujain Saad Al-Dera</h5>
+              <h5><span>&nbsp; Birth-Date: &nbsp;</span> 2000-April-11</h5>
+              <h5><span>&nbsp; Address: &nbsp;</span> Saudi Arabia, Abha</h5>
+              <p>
+                Driven student leveraging studies in computer science seeks real-world experience as developer. Offers strong interpersonal and task prioritization skills.
+              </p>
+            </div>
           </div>
           <!-- 2 -->
           <div class="info__content info__content--2">
             <div class="info__icon info__icon--2"><i class="fas fa-university"></i></div>
-            <h5 class="info__header">Education</h5>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
-            </p>
+            <!-- <h4 class="info__header">Education</h4> -->
+            <div class="info__details education">
+              <h5> <div> King Khalid University </div>
+                <span>Bachelor's Degree - Computer Science</span> 
+                <span>2018-2023 (5-Years Plan)</span> 
+              </h5>
+              <ul>
+                <li>Elected to be a member of Student Council</li>
+                <li>Developers' Club Lead</li>
+                <li>Member of the volunteering club</li>
+              </ul>
+            </div>
           </div>
           <!-- 3 -->
           <div class="info__content info__content--3">
             <div class="info__icon info__icon--3"><i class="fas fa-language"></i></div>
-            <h5 class="info__header">Languages</h5>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
-            </p>
+            <!-- <h4 class="info__header">Languages</h4> -->
+            <div class="info__details languages">
+              <h5> <div>Arabic </div>  
+                <span>Native</span> 
+              </h5>
+              <h5> <div>English </div> 
+                <span>Full work proficiency </span> 
+              </h5>
+            </div>
           </div>
           <!-- 4 -->
           <div class="info__content info__content--4">
             <div class="info__icon info__icon--4"><i class="fas fa-award"></i></div>
-            <h5 class="info__header">Awards</h5>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
-            </p>
+            <!-- <h4 class="info__header">Awards</h4> -->
+            <div class="info__details awards">
+              <div> <h5>Dean’s Competitive Programming Contest 🥉 </h5>  
+                <ul>
+                  <li>King Khalid University</li>
+                  <li>Nov 2021</li>
+                  <li>Languages: C++ and Python</li>
+                </ul>
+            </div>
+            <div> <h5>Excellence Certificate </h5>  
+              <ul>
+                <li>King Khalid University</li>
+                <li>Dec 2021</li>
+                <li>For Students with 4.75-5.00 GPA</li>
+              </ul>
+          </div>
+            </div>
           </div>
            <!-- 5 -->
            <div class="info__content info__content--5">
             <div class="info__icon info__icon--5"><i class="fas fa-briefcase"></i></div>
-            <h5 class="info__header">Experience</h5>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
-            </p>
+            <!-- <h4 class="info__header">Experience</h4> -->
+            <div class="info__details experience">
+              <div> <h5>Software Developers' Team Lead </h5>  
+                <ul>
+                  <li>King Khalid University</li>
+                  <li>2020 - present</li>
+                </ul>
+            </div>
+            <div> <h5>Assistant Manager </h5>  
+              <ul>
+                <li>Children with ‏Special Needs’ Association- Abha</li>
+                <li>Feb 2022 - present</li>
+              </ul>
+          </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- section 2   -->
-    <section class="section skills">
+    <section class="section skills" id="section--2">
       <div class="section__title">
         <h2 class="section__description">Skills:</h2>
         <h3 class="section__header">
-          Everything as simple as possible, but no simpler.
         </h3>
       </div>
       <div class="skills-container">
@@ -204,11 +235,10 @@
       </div>
     </section>
     <!-- section 3   -->
-    <section class="section projects">
+    <section class="section projects" id="section--3">
       <div class="section__title">
         <h2 class="section__description">Projects:</h2>
         <h3 class="section__header">
-          Everything as simple as possible, but no simpler.
         </h3>
       </div>
       <div class="cards-container">
@@ -226,7 +256,7 @@
                </div>
           </div>
           <div class="card__side card__side--back card__side--back-1">
-               <button href="https://github.com/LujainSaad" target="_blank" class=" btn--white">Open</button>
+               <a href="https://github.com/LujainSaad" target="_blank" class=" btn--white">Open</a>
           </div>
         </div>
         <!-- card 2 -->
@@ -243,7 +273,7 @@
                </div>
           </div>
           <div class="card__side card__side--back card__side--back-2">
-               <button href="https://github.com/LujainSaad/Natours-Exciting-tours-for-adventurous-people" target="_blank" class=" btn--white">Open</button>
+               <a href="https://github.com/LujainSaad/Natours-Exciting-tours-for-adventurous-people" target="_blank" class=" btn--white">Open</a>
           </div>
         </div>
         <!-- card 3 -->
@@ -260,7 +290,7 @@
                </div>
           </div>
           <div class="card__side card__side--back card__side--back-3">
-               <button href="https://github.com/LujainSaad/calculator-app-main" target="_blank" class=" btn--white">Open</button>
+               <a href="https://github.com/LujainSaad/calculator-app-main" target="_blank" class="btn--white">Open</a>
           </div>
         </div>
            <!-- card 2 -->
@@ -277,14 +307,14 @@
                  </div>
             </div>
             <div class="card__side card__side--back card__side--back-4">
-                 <button href="https://github.com/LujainSaad/personal_expenses_app" target="_blank" class=" btn--white">Open</button>
+                 <a href="https://github.com/LujainSaad/personal_expenses_app" target="_blank" class=" btn--white">Open</a>
             </div>
           </div>
       </div>
       </div>
     </section>
-
-    <!-- section 2   -->
+<!-- 
+    
     <section class="section recommendations">
       <div class="section__title section__title--testimonials">
         <h2 class="section__description">Recommendations:</h2>
@@ -344,7 +374,7 @@
         <button class="slider__btn slider__btn--right">&rarr;</button>
         <div class="dots"></div>
       </div>
-    </section>
+    </section> -->
 
      <!-- Footer -->
 

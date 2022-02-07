@@ -101,3 +101,12 @@ const slider = function () {
   });
 };
 slider();
+//scrolling
+
+document.querySelector(".buttons").addEventListener("click", function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains("button__link")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
