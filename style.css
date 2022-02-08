@@ -98,7 +98,7 @@ body {
       rgba(160, 213, 111, 0.6),
       rgba(140, 241, 73, 0.5)
     ),
-    url("img/water.gif");
+    url("img/water2.gif");
   background-size: cover;
   background-position: top;
 }
@@ -210,8 +210,19 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .header {
+    height: 95vh;
+  }
+  .container {
+    /* max-width: 30rem; */
+    padding-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 45rem;
+  }
   .heading {
-    font-size: 13rem;
+    font-size: 10rem;
   }
 
   .small-heading {
@@ -219,17 +230,18 @@ body {
   }
 
   .heading-container {
-    width: 40rem;
+    width: 37rem;
+    right: 0rem;
   }
 
   .heading-container {
-    margin-bottom: 9rem;
+    margin-bottom: 4rem;
   }
   .button-retro {
-    min-width: 200px;
-    height: 60px;
+    min-width: 25rem;
+    height: 5rem;
     padding: 5px 4px;
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .buttons > * {
@@ -348,6 +360,7 @@ body {
 .info__tab {
   margin-right: 2.5rem;
   margin-bottom: 1rem;
+  color: black;
 }
 
 .info__tab--1 {
@@ -462,8 +475,11 @@ body {
 .about span {
   background-color: var(--color-secondary-opacity);
   border-radius: 1rem;
-  margin-right: 1.5rem;
+  margin-right: 0.3rem;
   font-size: 2.1rem;
+}
+.about p span {
+  margin-right: 0.5rem;
 }
 /* education  */
 .education h5 {
@@ -603,6 +619,10 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
+  .about-me {
+    height: auto;
+    padding-bottom: 20rem;
+  }
   .info {
     width: 100vw;
     justify-content: default;
@@ -614,6 +634,7 @@ body {
     padding: 1rem 2rem;
     position: relative;
     left: -10rem;
+    padding-bottom: 5rem;
   }
   .info__header {
     font-size: 3rem;
@@ -672,8 +693,9 @@ body {
     font-size: 2.1rem;
   }
   .about p {
-    top: 5.5rem;
+    top: 0rem;
   }
+
   /* education  */
   .education h5 {
     font-size: 2rem;
@@ -717,6 +739,7 @@ body {
 .skills {
   background-color: var(--color-quinary);
   position: relative;
+  min-height: 90vh;
 
   background-image: linear-gradient(
       to right bottom,
@@ -734,27 +757,33 @@ body {
   justify-content: space-around;
   text-align: center;
   /* width: 80vh; */
-  margin: 5rem 30rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-40%, -50%);
 }
 
 .skill {
-  height: 18rem;
-  width: 18rem;
+  height: 7em;
+  width: 7em;
   /* flex: 0 0 10%; */
   border-radius: 50%;
   border: none;
   text-align: center;
   position: relative;
-  margin: 4rem 2rem;
+  margin: 5rem 2rem;
+  text-align: center;
 }
 
 .text {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 .skill-icon {
   display: block;
-  font-size: 13rem;
+  font-size: 8rem;
   color: #fff;
 }
 @media screen and (max-width: 1000px) {
@@ -784,6 +813,7 @@ body {
 .projects {
   background-color: var(--color-tertiary);
   position: relative;
+  min-height: 60vh;
 
   background-image: linear-gradient(
       to right bottom,
@@ -798,28 +828,30 @@ body {
   align-content: center;
   justify-content: center; */
 }
-.card-container {
+.cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: fit-content;
+  margin-bottom: 4rem;
 }
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 37rem;
-  width: 37rem;
+  height: 20rem;
+  width: 20rem;
 
   display: inline-block;
   margin: 4rem;
 }
 .card__side {
-  height: 37rem;
-  width: 37rem;
+  height: 20rem;
+  width: 20rem;
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
@@ -856,17 +888,12 @@ body {
   transform: rotateY(0);
 }
 .card__picture {
-  background-size: cover;
+  background-size: contain;
   height: 41rem;
   background-blend-mode: screen;
-  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
-  /* border-top-left-radius: 3px;
-  border-top-right-radius: 3px; */
+  /* background-position: center; */
 }
-.card__picture {
-  background-position: center;
-}
+
 .card__picture--1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
     url(img/ezgif.com-gif-maker1.gif);
@@ -885,13 +912,13 @@ body {
   /* background-position: top; */
 }
 .card__heading {
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   font-weight: 300;
   text-transform: uppercase;
   text-align: right;
   color: #fff;
   position: absolute;
-  top: 25rem;
+  top: 13rem;
   right: 2rem;
 }
 .card__heading-span {
@@ -936,11 +963,11 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: inherit;
   font-weight: 500;
   border: none;
-  padding: 1.25rem 3.5rem;
+  padding: 1.25rem 3rem;
   background-color: #fff;
   border-radius: 10rem;
   cursor: pointer;
@@ -1125,10 +1152,6 @@ body {
 .recommendation__author {
   margin-left: 3rem;
   font-style: normal;
-
-  /* display: grid;
-  grid-template-columns: 6.5rem 1fr;
-  column-gap: 2rem; */
 }
 
 .recommendation__name {
@@ -1193,8 +1216,8 @@ body {
 
 #footer {
   background-color: var(--color-primary);
-  padding: 6% 15%;
-  font-size: 3rem;
+  padding: 4% 10%;
+  font-size: 2rem;
   position: relative;
   text-align: center;
 
@@ -1212,13 +1235,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 1rem auto;
+  margin: 0.5rem auto;
 }
 .footer-icon {
   padding: 2% 1%;
-  margin: 0 1.5rem 1.5rem;
+  margin: 0 1rem 1.5rem;
   color: #fff;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 @media screen and (max-width: 1000px) {
   .footer-icon {

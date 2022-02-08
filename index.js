@@ -110,3 +110,22 @@ document.querySelector(".buttons").addEventListener("click", function (e) {
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
+
+//cards for iphone
+// const cards = document.querySelectorAll(".card");
+// const cardsContainer = document.querySelector(".cards-container");
+// const cardsBack = document.querySelectorAll(".card__side");
+
+// cardsContainer.addEventListener("click", function (e) {
+//   const clicked = e.target.closest(".card");
+
+//   if (!clicked) return;
+
+//   cards.forEach((t) => t.classList.remove("info__tab--active"));
+//   tabsContent.forEach((c) => c.classList.remove("info__content--active"));
+
+//   clicked.classList.add("info__tab--active");
+//   document
+//     .querySelector(`.info__content--${clicked.dataset.tab}`)
+//     .classList.add("info__content--active");
+// });
