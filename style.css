@@ -71,12 +71,12 @@ body {
 /* headings  */
 
 .primary-heading {
-  font-size: 10rem;
+  font-size: 5rem;
   font-family: "Indie Flower", cursive;
 }
 
 .secondary-heading {
-  font-size: 9rem;
+  font-size: 4rem;
   font-family: serif;
 }
 
@@ -87,42 +87,52 @@ body {
 
 /*************************************************/
 /* header  */
-
 .header {
-  /* height: 105vh; */
   height: auto;
-  padding-bottom: 8rem;
+  min-height: 95vh;
+  padding-bottom: 3rem;
   position: relative;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(160, 213, 111, 0.6),
+      rgba(140, 241, 73, 0.5)
+    ),
+    url("img/water.gif");
+  background-size: cover;
+  background-position: top;
 }
 
 .container {
-  max-width: 60rem;
-  margin: 0 auto 1rem;
-  padding-top: 10rem;
-  min-height: 50rem;
+  /* max-width: 30rem; */
+  padding-top: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  align-content: center;
-  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
 /* heading */
+
 .heading-container {
-  margin: 4rem;
+  margin: 6rem;
+  padding: 8rem;
+  /* width: 20rem; */
   border: 2px solid #fff;
-  padding: 3rem;
-  width: 70rem;
   text-align: center;
   position: relative;
+  right: 9rem;
 }
+
 .heading-container::after {
   content: "";
   border: 5px solid var(--color-quinary);
   position: absolute;
   height: 100%;
   width: 100%;
-  top: -5rem;
+  top: -3rem;
   right: -5rem;
   z-index: -1;
 }
@@ -132,31 +142,28 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  bottom: -4rem;
+  bottom: -3rem;
   left: -5rem;
   z-index: -1;
 }
 .heading {
-  font-size: 15rem;
+  font-size: 9rem;
   letter-spacing: 0;
-  line-height: 0.7;
+  line-height: 0.8;
   font-style: italic;
   text-shadow: -2px -2px 0 var(--color-secondary),
     2px -2px 0 var(--color-secondary), -2px 2px 0 var(--color-secondary),
     2px 2px 0 var(--color-secondary);
 }
-.heading__img {
-  height: 65rem;
-}
 
 .small-heading {
-  font-size: 10rem;
+  font-size: 7rem;
 }
 
 /* buttons */
 .button__link:link,
 .button__link:visited {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   color: inherit;
   text-decoration: none;
   display: block;
@@ -165,16 +172,16 @@ body {
 .buttons {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .buttons > * {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .button-retro {
-  min-width: 300px;
-  height: 60px;
+  min-width: 20rem;
+  height: 4rem;
   color: #fff;
   padding: 5px 10px;
   font-size: 20px;
@@ -201,27 +208,7 @@ body {
   transition: 0.2s;
   opacity: 0.9;
 }
-/* responsive */
-@media screen and (min-width: 1000px) {
-  .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: default;
-    align-items: default;
-    position: relative;
-    top: 50rem;
-    transform: translate(-50%, -50%);
-  }
 
-  .heading-container {
-    margin: 15rem;
-    padding: 13rem;
-    width: 100rem;
-    text-align: center;
-    position: relative;
-    right: 4rem;
-  }
-}
 @media screen and (max-width: 1000px) {
   .heading {
     font-size: 13rem;
@@ -292,7 +279,6 @@ body {
 
   transition: transform 1s, opacity 1s;
   height: auto;
-  padding-bottom: 8rem;
 }
 .section__title {
   max-width: 80rem;
@@ -326,14 +312,15 @@ body {
     url("img/pexels-luis-gomes-546819.jpg");
   background-size: cover;
   background-position: top;
+  padding-bottom: 10rem;
 }
 .info {
-  width: 70vw;
-  margin: 0 auto 6rem;
-  padding-top: 10rem;
+  /* width: 70vw; */
+  margin: 0 auto 3rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   text-align: left;
 }
 
@@ -341,11 +328,11 @@ body {
 
 .btn {
   display: inline-block;
-  font-size: 2.7rem;
+  font-size: 2rem;
   font-family: inherit;
   font-weight: 500;
   border: none;
-  padding: 2rem 8.5rem 2rem 1.5rem;
+  padding: 1rem 8.5rem 1rem 1.3rem;
   border-radius: 10rem;
   cursor: pointer;
   transition: all 0.3s;
@@ -360,7 +347,7 @@ body {
 
 .info__tab {
   margin-right: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .info__tab--1 {
@@ -406,9 +393,10 @@ body {
 
 .info__content {
   display: none;
-  min-height: 60vh;
-  font-size: 2.7rem;
-  padding: 2.5rem 13rem 6.5rem 10rem;
+  min-height: 50vh;
+  /* width: 30rem; */
+  font-size: 2rem;
+  padding: 2.5rem 8rem 6.5rem 7rem;
   background-color: rgb(231, 237, 247);
   color: #000;
   z-index: 99;
@@ -434,15 +422,11 @@ body {
 
 .info__content--active {
   display: inline-block;
-  width: 40vw;
+  width: auto;
 }
-
-.info__header {
-  font-size: 3.25rem;
-  font-weight: 500;
-  align-self: center;
-  margin-top: 4rem;
-  margin-left: 3rem;
+.info__content-container {
+  position: relative;
+  height: 43rem;
 }
 .info__details {
   position: relative;
@@ -452,45 +436,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   position: relative;
-  left: -6rem;
+  left: -4rem;
 }
 
 .info__icon i {
-  font-size: 3rem;
+  font-size: 2rem;
   color: rgba(43, 41, 41, 0.904);
 }
 
 .info__content p {
-  font-size: 3rem;
-  margin-top: 6rem;
+  font-size: 2rem;
+  margin-top: 4rem;
 }
 /* about */
 .about h5 {
   font-weight: normal;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 2;
 }
 .about span {
   background-color: var(--color-secondary-opacity);
   border-radius: 1rem;
   margin-right: 1.5rem;
-  font-size: 3.1rem;
-  /* font-weight: bold; */
+  font-size: 2.1rem;
 }
 /* education  */
 .education h5 {
   font-weight: normal;
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 2;
 }
 .education span {
   display: block;
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   /* color: var(--color-primary-darker); */
   margin-left: 3rem;
 }
@@ -502,8 +485,9 @@ body {
   padding: 0 2rem;
 }
 .education ul {
-  margin-top: 5rem;
+  margin-top: 3rem;
   list-style: none;
+  font-size: 1.9rem;
 }
 .education ul li::before {
   content: "\25A0";
@@ -516,8 +500,8 @@ body {
 /* languages */
 .languages h5 {
   /* font-weight: normal; */
-  margin-bottom: 5rem;
-  font-size: 4rem;
+  margin-bottom: 3rem;
+  font-size: 2.1rem;
 }
 .languages div {
   background-color: var(--color-tertiary-opacity);
@@ -528,13 +512,13 @@ body {
 }
 .languages span {
   display: block;
-  font-size: 3rem;
+  font-size: 1.9rem;
   margin-left: 2rem;
   font-weight: normal;
 }
 /* awards */
 .awards div {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .awards h5 {
   padding: 0 2rem;
@@ -556,7 +540,7 @@ body {
 }
 /* experience */
 .experience div {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .experience h5 {
   padding: 0 2rem;
