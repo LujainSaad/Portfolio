@@ -219,7 +219,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    top: 45rem;
+    top: 42rem;
   }
   .heading {
     font-size: 7rem;
