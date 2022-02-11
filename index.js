@@ -111,21 +111,20 @@ document.querySelector(".buttons").addEventListener("click", function (e) {
   }
 });
 
-//cards for iphone
-// const cards = document.querySelectorAll(".card");
-// const cardsContainer = document.querySelector(".cards-container");
-// const cardsBack = document.querySelectorAll(".card__side");
+// cards for iphone
+const cards = document.querySelectorAll(".card");
+const cardsContainer = document.querySelector(".cards-container");
+const cardsFront = document.querySelectorAll(".card__side--front");
+const cardsBack = document.querySelectorAll(".card__side--back");
 
-// cardsContainer.addEventListener("click", function (e) {
-//   const clicked = e.target.closest(".card");
+cardsContainer.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".card");
 
-//   if (!clicked) return;
+  if (!clicked) return;
 
-//   cards.forEach((t) => t.classList.remove("info__tab--active"));
-//   tabsContent.forEach((c) => c.classList.remove("info__content--active"));
+  cardsFront.forEach((f) => (f.style.transform = "rotateY(0)"));
+  cardsBack.forEach((b) => (b.style.transform = "rotateY(-180deg)"));
 
-//   clicked.classList.add("info__tab--active");
-//   document
-//     .querySelector(`.info__content--${clicked.dataset.tab}`)
-//     .classList.add("info__content--active");
-// });
+  clicked.closest(".card__side--front").style.transform = "rotateY(-180deg)";
+  clicked.closest(".card__side--back").style.transform = "rotateY(0)";
+});
