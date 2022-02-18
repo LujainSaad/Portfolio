@@ -88,7 +88,7 @@ body {
 /*************************************************/
 /* header  */
 .header {
-  height: auto;
+  height: fit-content;
   min-height: 95vh;
   padding-bottom: 3rem;
   position: relative;
@@ -132,7 +132,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  top: -3rem;
+  top: -1rem;
   right: -5rem;
   z-index: -1;
 }
@@ -219,7 +219,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    top: 42rem;
+    top: 40rem;
   }
   .heading {
     font-size: 7rem;
