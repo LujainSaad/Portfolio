@@ -662,7 +662,7 @@ body {
 @media screen and (max-width: 600px) {
   .about-me {
     height: auto;
-    padding-bottom: 14rem;
+    padding-bottom: 17rem;
   }
   .info {
     width: 100vw;
@@ -857,7 +857,7 @@ body {
 .projects {
   background-color: var(--color-tertiary);
   position: relative;
-  height: 95vh;
+  height: 105vh;
   background-image: linear-gradient(
       to right bottom,
       rgba(241, 110, 116, 0.8),
@@ -876,7 +876,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  /* top: 60%; */
+  top: 25%;
   margin: 35rem 0 0;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1066,11 +1066,13 @@ body {
 }
 /* responsive */
 @media screen and (max-width: 1000px) {
+  .projects {
+    height: 98vh;
+  }
   .card-container {
     justify-content: space-around;
     margin: 55rem 0 0;
     left: 50%;
-    /* top: 10%; */
     transform: translate(-50%, -50%);
   }
   .card {
