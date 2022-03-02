@@ -857,7 +857,7 @@ body {
 .projects {
   background-color: var(--color-tertiary);
   position: relative;
-  height: 105vh;
+  height: 70rem;
   background-image: linear-gradient(
       to right bottom,
       rgba(241, 110, 116, 0.8),
@@ -872,12 +872,14 @@ body {
   justify-content: center; */
 }
 .cards-container {
+  height: 65rem;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  top: 30%;
-  margin: 35rem 0 0;
+  top: 40%;
+  margin: 20rem 0 0;
   left: 50%;
   transform: translate(-50%, -50%);
   width: fit-content;
@@ -1065,7 +1067,15 @@ body {
   transform: translate(-50%, -50%);
 }
 /* responsive */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
+  .projects {
+    height: 130rem;
+  }
+  .cards-container {
+    height: 105rem;
+  }
+}
+@media screen and (max-width: 500px) {
   .projects {
     height: 120rem;
   }
@@ -1078,7 +1088,7 @@ body {
     grid-template-rows: 4; */
 
     /* justify-content: space-around; */
-    margin: 35rem 0 25rem;
+    margin: 32rem 0 25rem;
     left: 50%;
     bottom: 5rem;
     transform: translate(-50%, -50%);
