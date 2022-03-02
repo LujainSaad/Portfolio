@@ -93,7 +93,6 @@ body {
 /*************************************************/
 /* header  */
 .header {
-  height: fit-content;
   min-height: 95vh;
   padding-bottom: 4rem;
   position: relative;
@@ -215,10 +214,10 @@ body {
 
 @media screen and (max-width: 1000px) {
   .header {
-    height: fit-content;
+    min-height: 100rem;
   }
   .container {
-    /* max-width: 30rem; */
+    min-height: 70rem;
     padding-top: 0rem;
     display: flex;
     flex-direction: column;
