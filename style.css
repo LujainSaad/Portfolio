@@ -1107,10 +1107,10 @@ body {
     background-position: top;
   }
   .card__heading {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: left;
     position: absolute;
-    top: 7rem;
+    top: 5rem;
   }
   .card__heading-span {
     padding: 1rem 1.5rem;
