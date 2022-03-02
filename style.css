@@ -1067,17 +1067,18 @@ body {
 /* responsive */
 @media screen and (max-width: 1000px) {
   .projects {
-    height: 98vh;
+    height: 105vh;
   }
-  .card-container {
-    display: grid;
-    gap: 50px;
+  .cards-container {
+    /* display: grid;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4;
+    grid-template-rows: 4; */
 
     /* justify-content: space-around; */
-    margin: 55rem 0 0;
+    margin: 30rem 0 25rem;
     left: 50%;
+    bottom: 5rem;
     transform: translate(-50%, -50%);
   }
   .card {
