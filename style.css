@@ -1079,10 +1079,10 @@ body {
 }
 @media screen and (max-width: 500px) {
   .projects {
-    height: 120rem;
+    height: 100rem;
   }
   .cards-container {
-    height: 105rem;
+    height: 90rem;
 
     /* display: grid;
     gap: 1rem;
@@ -1090,9 +1090,8 @@ body {
     grid-template-rows: 4; */
 
     /* justify-content: space-around; */
-    margin: 22rem 0 25rem;
+    margin: 22rem 0 5rem;
     left: 50%;
-    bottom: 5rem;
     transform: translate(-50%, -50%);
   }
   .card {
