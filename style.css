@@ -1317,7 +1317,7 @@ body {
   font-size: 2rem;
   position: relative;
   text-align: center;
-  height: 18rem;
+  /* height: 18rem; */
 
   background-image: linear-gradient(
       to right bottom,
