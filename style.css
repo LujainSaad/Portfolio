@@ -216,7 +216,7 @@ body {
 
 @media screen and (max-width: 1000px) {
   .header {
-    height: 95vh;
+    height: fit-content;
   }
   .container {
     /* max-width: 30rem; */
