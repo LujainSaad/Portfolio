@@ -95,7 +95,7 @@ body {
 .header {
   height: fit-content;
   min-height: 95vh;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   position: relative;
 
   background-image: linear-gradient(
