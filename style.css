@@ -38,6 +38,8 @@
   vertical-align: baseline;
   background: transparent;
   scroll-behavior: smooth;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 *,
