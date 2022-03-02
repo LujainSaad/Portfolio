@@ -876,7 +876,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  top: 25%;
+  top: 30%;
   margin: 35rem 0 0;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1070,7 +1070,12 @@ body {
     height: 98vh;
   }
   .card-container {
-    justify-content: space-around;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4;
+
+    /* justify-content: space-around; */
     margin: 55rem 0 0;
     left: 50%;
     transform: translate(-50%, -50%);
