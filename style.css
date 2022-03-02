@@ -1090,7 +1090,7 @@ body {
     grid-template-rows: 4; */
 
     /* justify-content: space-around; */
-    margin: 32rem 0 25rem;
+    margin: 22rem 0 25rem;
     left: 50%;
     bottom: 5rem;
     transform: translate(-50%, -50%);
