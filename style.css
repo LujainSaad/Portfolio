@@ -1067,28 +1067,30 @@ body {
 /* responsive */
 @media screen and (max-width: 1000px) {
   .projects {
-    height: 105vh;
+    height: 120rem;
   }
   .cards-container {
+    height: 105rem;
+
     /* display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 4; */
 
     /* justify-content: space-around; */
-    margin: 30rem 0 25rem;
+    margin: 35rem 0 25rem;
     left: 50%;
     bottom: 5rem;
     transform: translate(-50%, -50%);
   }
   .card {
-    height: 17rem;
-    width: 17rem;
+    height: 15rem;
+    width: 15rem;
     margin: 1rem;
   }
   .card__side {
-    height: 17rem;
-    width: 17rem;
+    height: 15rem;
+    width: 15rem;
   }
   .card__picture {
     background-size: 27rem;
