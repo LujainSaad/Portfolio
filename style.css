@@ -214,7 +214,7 @@ body {
 
 @media screen and (max-width: 1000px) {
   .header {
-    min-height: 100rem;
+    min-height: 90rem;
   }
   .container {
     min-height: 70rem;
@@ -1106,7 +1106,7 @@ body {
     background-position: top;
   }
   .card__heading {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: left;
     position: absolute;
     top: 5rem;
